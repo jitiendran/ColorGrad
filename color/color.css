@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat',sans-serif;
+  background: #fdfdfd;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background: #fff;
+  padding: .8em;
+}
+
+nav .web-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18%;
+}
+
+nav .web-title h3 {
+  margin-left: .3em;
+  font-size: 1.4em;
+}
+
+nav .web-title h3 span {
+  font-weight: 600;
+  background: -webkit-linear-gradient(#dada00, orange, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav .web-title img {
+  height: 2.5em;
+}
+
+nav .nav-container {
+  width: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav .nav-container a {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  height: 1.7em;
+}
+
+nav .nav-container a:hover {
+  -webkit-text-decoration: underline 3px solid #47ebbf;
+          text-decoration: underline 3px solid #47ebbf;
+}
+
+main .search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5em;
+  padding: 2em 3.2em;
+  margin-bottom: -10em;
+}
+
+main .search-wrapper input {
+  font-size: 1.2em;
+  padding: .3em;
+  border-top-left-radius: .2em;
+  border-bottom-left-radius: .2em;
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+main .search-wrapper button {
+  font-size: 1.2em;
+  padding: .39em .4em;
+  border-top-right-radius: .2em;
+  border-bottom-right-radius: .2em;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: gray;
+  outline: none;
+}
+
+main .color-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  max-width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1em;
+  margin-top: 10em;
+}
+
+main .color-wrapper .color-container {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0.3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 0.3px rgba(0, 0, 0, 0.2);
+  border-radius: .5em;
+  width: 17%;
+  height: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .color-wrapper .color-container .copy-wrapper {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .color-wrapper .color-container .copy-wrapper button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.4em;
+}
+
+main .color-wrapper .color-container .copy-wrapper .copyshow {
+  display: none;
+}
+
+main .color-wrapper .color-container .color {
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+  height: 70%;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 1.5em;
+}
+
+footer h3 {
+  font-size: 1.2em;
+}
+
+footer h3 span {
+  font-size: 1.2em;
+  background: #f7ff00;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#fa63c8), to(#f7ff00));
+  background: linear-gradient(to right, #fa63c8, #f7ff00);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+/*# sourceMappingURL=color.css.map */

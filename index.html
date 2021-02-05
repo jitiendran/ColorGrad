@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorGrad</title>
+    <link rel="icon" href="./images/color-picker.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="web-title">
+            <img src="./images/color-picker.png" alt="">
+            <h3>Color<span>Grad</span></h3>
+        </div>
+        <div class="nav-container">
+            <a href="./index.html">Home</a>
+            <a href="#">Docs</a>
+            <a href="./color/color.html">Colors</a>
+            <a href="#">Gradients</a>
+            <a href="#">Contribute</a>
+        </div>
+    </nav>
+    <header>
+        <h3>Hey say <span>Goodbye!</span> to black and white</h3>
+        <p><span>Color</span> gives life to your websites</p>
+        <div class="btns-container">
+            <button id="color" onclick="goColor()">Colors</button>
+            <button id="gradient" onclick="goGradient()">Gradients</button>
+        </div>
+    </header>
+    <main>
+        <div class="gradient-container">
+            <div class="row">
+                <h3>Gradients</h3>
+                <button onclick="goGradient()">Check it out</button>
+            </div>
+            <div class="img-container">
+                <img src="./images/gradient.jpg" alt="">
+            </div>
+        </div>
+        <div class="color-container">
+            <div class="row">
+                <h3>Colors</h3>
+                <button onclick="goColor()">Check it out</button>
+            </div>
+            <div class="img-container">
+                <img src="./images/color.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-contents">
+            <div class="copyright">
+                <h3>Copyrights <i class="far fa-copyright"></i> 2021 <span>Color</span>Grad, All rights reserved.</h3>
+            </div>
+            <div class="icons">
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
