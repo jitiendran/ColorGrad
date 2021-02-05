@@ -109,8 +109,8 @@ header h3 span {
   background: #f7ff00;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#fa63c8), to(#f7ff00));
-  background: linear-gradient(to right, #fa63c8, #f7ff00);
+  background: -webkit-gradient(linear, left top, right top, from(#f7ff00), to(#fa63c8));
+  background: linear-gradient(to right, #f7ff00, #fa63c8);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
