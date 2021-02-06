@@ -1,156 +1,179 @@
-[
-    {
-        "color": [
-            {
-                "id": "c1",
-                "type": "green",
-                "hex": "#7fffd4"
-            },
-            {
-                "id": "c2",
-                "type": "violet",
-                "hex": "#bc6ff1"
-            },
-            {
-                "id": "c3",
-                "type": "red",
-                "hex": "#e94560"
-            },
-            {
-                "id": "c4",
-                "type": "orange",
-                "hex": "#ff6363"
-            },
-            {
-                "id": "c5",
-                "type": "yellow",
-                "hex": "#ffbd69"
-            },
-            {
-                "id": "c6",
-                "type": "blue",
-                "hex": "#00ffff"
-            },
-            {
-                "id": "c7",
-                "type": "blue",
-                "hex": "#6495ed"
-            },
-            {
-                "id": "c8",
-                "type": "red",
-                "hex": "#dc143c"
-            },
-            {
-                "id": "c9",
-                "type": "orange",
-                "hex": "#ff7f50"
-            },
-            {
-                "id": "c10",
-                "type": "green",
-                "hex": "#008000"
-            },
-            {
-                "id": "c11",
-                "type": "green",
-                "hex": "#adff2f"
-            },
-            {
-                "id": "c12",
-                "type": "green",
-                "hex": "#98fb98"
-            },
-            {
-                "id": "c13",
-                "type": "red",
-                "hex": "#d87093"
-            },
-            {
-                "id": "c14",
-                "type": "gold",
-                "hex": "#eee8aa"
-            },
-            {
-                "id": "c15",
-                "type": "blue",
-                "hex": "#afeeee"
-            },
-            {
-                "id": "c16",
-                "type": "gold",
-                "hex": "#f5f5dc"
-            },
-            {
-                "id": "c17",
-                "type": "violet",
-                "hex": "#8a2be2"
-            },
-            {
-                "id": "c18",
-                "type": "gold",
-                "hex": "#deb887"
-            },
-            {
-                "id": "c19",
-                "type": "pink",
-                "hex": "#ff5e78"
-            },
-            {
-                "id": "c20",
-                "type": "yellow",
-                "hex": "#ffe227"
-            },
-            {
-                "id": "c21",
-                "type": "brown",
-                "hex": "#d6b0b1"
-            },
-            {
-                "id": "c22",
-                "type": "pink",
-                "hex": "#ff9292"
-            },
-            {
-                "id": "c23",
-                "type": "blue",
-                "hex": "#aee1e1"
-            },
-            {
-                "id": "c24",
-                "type": "pink",
-                "hex": "#ff577f"
-            },
-            {
-                "id": "c25",
-                "type": "orange",
-                "hex": "#ff884b"
-            },
-            {
-                "id": "c26",
-                "type": "blue",
-                "hex": "#cdfffc"
-            },
-            {
-                "id": "c27",
-                "type": "green",
-                "hex": "#184d47"
-            },
-            {
-                "id": "c28",
-                "type": "violet",
-                "hex": "#e9b0df"
-            },
-            {
-                "id": "c29",
-                "type": "red",
-                "hex": "#ef4f4f"
-            },
-            {
-                "id": "c30",
-                "type": "gold",
-                "hex": "#fde8cd"
-            }
-        ]
-    }
-]
+{
+    "color": [
+        {
+            "id": "c1",
+            "type": "green",
+            "hex": "#7fffd4"
+        },
+        {
+            "id": "c2",
+            "type": "violet",
+            "hex": "#bc6ff1"
+        },
+        {
+            "id": "c3",
+            "type": "red",
+            "hex": "#e94560"
+        },
+        {
+            "id": "c4",
+            "type": "orange",
+            "hex": "#ff6363"
+        },
+        {
+            "id": "c5",
+            "type": "yellow",
+            "hex": "#ffbd69"
+        },
+        {
+            "id": "c6",
+            "type": "blue",
+            "hex": "#00ffff"
+        },
+        {
+            "id": "c7",
+            "type": "blue",
+            "hex": "#6495ed"
+        },
+        {
+            "id": "c8",
+            "type": "red",
+            "hex": "#dc143c"
+        },
+        {
+            "id": "c9",
+            "type": "orange",
+            "hex": "#ff7f50"
+        },
+        {
+            "id": "c10",
+            "type": "green",
+            "hex": "#008000"
+        },
+        {
+            "id": "c11",
+            "type": "green",
+            "hex": "#adff2f"
+        },
+        {
+            "id": "c12",
+            "type": "green",
+            "hex": "#98fb98"
+        },
+        {
+            "id": "c13",
+            "type": "red",
+            "hex": "#d87093"
+        },
+        {
+            "id": "c14",
+            "type": "gold",
+            "hex": "#eee8aa"
+        },
+        {
+            "id": "c15",
+            "type": "blue",
+            "hex": "#afeeee"
+        },
+        {
+            "id": "c16",
+            "type": "gold",
+            "hex": "#f5f5dc"
+        },
+        {
+            "id": "c17",
+            "type": "violet",
+            "hex": "#8a2be2"
+        },
+        {
+            "id": "c18",
+            "type": "gold",
+            "hex": "#deb887"
+        },
+        {
+            "id": "c19",
+            "type": "pink",
+            "hex": "#ff5e78"
+        },
+        {
+            "id": "c20",
+            "type": "yellow",
+            "hex": "#ffe227"
+        },
+        {
+            "id": "c21",
+            "type": "brown",
+            "hex": "#d6b0b1"
+        },
+        {
+            "id": "c22",
+            "type": "pink",
+            "hex": "#ff9292"
+        },
+        {
+            "id": "c23",
+            "type": "blue",
+            "hex": "#aee1e1"
+        },
+        {
+            "id": "c24",
+            "type": "pink",
+            "hex": "#ff577f"
+        },
+        {
+            "id": "c25",
+            "type": "orange",
+            "hex": "#ff884b"
+        },
+        {
+            "id": "c26",
+            "type": "blue",
+            "hex": "#cdfffc"
+        },
+        {
+            "id": "c27",
+            "type": "green",
+            "hex": "#184d47"
+        },
+        {
+            "id": "c28",
+            "type": "violet",
+            "hex": "#e9b0df"
+        },
+        {
+            "id": "c29",
+            "type": "red",
+            "hex": "#ef4f4f"
+        },
+        {
+            "id": "c30",
+            "type": "gold",
+            "hex": "#fde8cd"
+        },
+        {
+            "id": "c31",
+            "type": "blue",
+            "hex": "#111d5e"
+        },
+        {
+            "id": "c32",
+            "type": "white",
+            "hex": "#fcf8e8"
+        },
+        {
+            "id": "c33",
+            "type": "pink",
+            "hex": "#ffabe1"
+        },
+        {
+            "id": "c34",
+            "type": "white",
+            "hex": "#f6ecf0"
+        },
+        {
+            "id": "c35",
+            "type": "brown",
+            "hex": "#654062"
+        }
+    ]
+}

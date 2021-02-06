@@ -1,5 +1,5 @@
 const div = document.getElementById('wrapper')
-function copy(id,hex){
+const copy = (id,hex)=>{
     const copytext = document.getElementById(id).textContent
     navigator.clipboard.writeText(copytext).then(()=>{
         const copywrap = document.getElementById("s"+id)
@@ -16,14 +16,14 @@ function copy(id,hex){
 fetch("./color.json")
     .then((resp)=>{return resp.json()})
     .then((data)=>{
-        for(let i = 0 ; i < data[0].color.length ; i++){
+        for(let i = 0 ; i < data.color.length ; i++){
             div.innerHTML += 
             `<div class="color-container">
-                <div class="color" style="background-color: ${data[0].color[i].hex}"></div>
+                <div class="color" style="background-color: ${data.color[i].hex}"></div>
                 <div class="copy-wrapper" id="copy">
-                    <h3 id="${data[0].color[i].id}">${data[0].color[i].hex}</h3>
-                    <div id="${"s"+data[0].color[i].id}" style="display:none"><p>Copied!</p></div>
-                    <button onclick="copy('${data[0].color[i].id}','${data[0].color[i].hex}')"><i class="far fa-copy"></i></button>
+                    <h3 id="${data.color[i].id}">${data.color[i].hex}</h3>
+                    <div id="${"s"+data.color[i].id}" style="display:none"><p>Copied!</p></div>
+                    <button onclick="copy('${data.color[i].id}','${data.color[i].hex}')"><i class="far fa-copy"></i></button>
                 </div>
             </div>`
         }

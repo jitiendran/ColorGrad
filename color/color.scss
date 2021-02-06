@@ -55,29 +55,38 @@ nav{
 main{
     .search-wrapper{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         margin-top: 5em;
         padding: 2em 3.2em;
         margin-bottom: -10em;
-        input{
-            font-size: 1.2em;
-            padding: .3em;
-            border-top-left-radius: .2em;
-            border-bottom-left-radius: .2em;
-            border: 2px solid #ccc;
-            outline: none;
+        h3{
+            font-size: 2em;
+            width: 3.2em;
+            border-bottom: 3px solid #47ebbf;
+            font-weight: 500;
         }
-        button{
-            font-size: 1.2em;
-            padding: .39em .4em;
-            border-top-right-radius: .2em;
-            border-bottom-right-radius: .2em;
-            border: none;
-            cursor: pointer;
-            color: #fff;
-            background: rgb(128, 128, 128);
-            outline: none;
+        .input-content{
+            display: flex;
+            input{
+                font-size: 1.2em;
+                padding: .3em;
+                border-top-left-radius: .2em;
+                border-bottom-left-radius: .2em;
+                border: 2px solid #ccc;
+                outline: none;
+            }
+            button{
+                font-size: 1.2em;
+                padding: .39em .4em;
+                border-top-right-radius: .2em;
+                border-bottom-right-radius: .2em;
+                border: none;
+                cursor: pointer;
+                color: #fff;
+                background: rgb(128, 128, 128);
+                outline: none;
+            }
         }
     }
     .color-wrapper{

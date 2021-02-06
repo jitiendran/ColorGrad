@@ -80,9 +80,9 @@ main .search-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -91,7 +91,20 @@ main .search-wrapper {
   margin-bottom: -10em;
 }
 
-main .search-wrapper input {
+main .search-wrapper h3 {
+  font-size: 2em;
+  width: 3.2em;
+  border-bottom: 3px solid #47ebbf;
+  font-weight: 500;
+}
+
+main .search-wrapper .input-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .search-wrapper .input-content input {
   font-size: 1.2em;
   padding: .3em;
   border-top-left-radius: .2em;
@@ -100,7 +113,7 @@ main .search-wrapper input {
   outline: none;
 }
 
-main .search-wrapper button {
+main .search-wrapper .input-content button {
   font-size: 1.2em;
   padding: .39em .4em;
   border-top-right-radius: .2em;
