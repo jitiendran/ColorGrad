@@ -224,7 +224,31 @@
             "id": "c45",
             "type": "grey",
             "hex": "#e7e6e1"
+        },
+        {
+            "id": "c46",
+            "type": "yellow",
+            "hex": "#fad586"
+        },
+        {
+            "id": "c47",
+            "type": "grey",
+            "hex": "#dddddd"
+        },
+        {
+            "id": "c48",
+            "type": "blue",
+            "hex": "#a7c5eb"
+        },
+        {
+            "id": "c49",
+            "type": "red",
+            "hex": "#ff8585"
+        },
+        {
+            "id": "c50",
+            "type": "blue",
+            "hex": "#98acf8"
         }
-
     ]
 }
