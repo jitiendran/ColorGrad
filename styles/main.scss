@@ -12,6 +12,18 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+
+// global declarations
+.red-dot,.green-dot,.yellow-dot{
+    border-radius: 50%;
+    margin-right: .5em;
+    width: 1em;
+    height: 1em;
+}
+.red-dot{background: #dc2430;}
+.green-dot{background-color: rgb(96, 255, 96);}
+.yellow-dot{background-color: #f7ff00;}
+
 nav{
     display: flex;
     top: 0;
@@ -119,6 +131,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    #color-h3{
+        width: auto;
+    }
     button{
         outline: none;
         cursor: pointer;
@@ -134,11 +149,11 @@ header{
 }
 main{
     width: 100%;
-    height: 100%;
+    padding: .5em;
+    background-color: #f2f2f2;
     .gradient-container{
-        background: #f2f2f2;
-        width: 100%;
-        height: 45em;
+        width: auto;
+        height: 62em;
         padding: 1em;
         h3{
             font-size: 2em;
@@ -146,40 +161,154 @@ main{
             border-bottom: 3px solid #47ebbf;
             font-weight: 500;
         }
-        .img-container{
-            display: flex;
-            justify-content: center;
-            img{
-                width: 60em;
-                height: 40em;
+        .row-card{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2em;
+            .ss-wrapper{
+                padding: 3em 2em;
+                .ss-container{
+                    border-radius: .5em;
+                    box-shadow: 10px 10px 5px .2px rgba(0,0,0,.2);
+                    display: flex;
+                    width: auto;
+                    flex-direction: column;
+                    background: rgb(77, 77, 77);
+                    .ss-header{
+                        border-top-left-radius: .5em;
+                        border-top-right-radius: .5em;
+                        background-color: #333;
+                        padding: 1em;
+                        display: flex;
+                    }
+                    .ss-content{
+                        padding: 1em;
+                        p{
+                            font-size: 1.2em;
+                            margin-bottom: .2em;
+                        }
+                        #code-class{
+                            font-weight: 500;
+                            color: orange;
+                        }
+                        #colon{
+                            font-weight: 600;
+                            color: violet;
+                        }
+                        #bracket{
+                            font-weight: 500;
+                            color: violet;
+                        }
+                        #code-keywords{
+                            margin-left: 2em;
+                            color: rgb(250, 42, 111);
+                        }
+                        #code-content{color: lightgreen;}
+                        #function{color: cornflowerblue;}
+                        #curly{
+                            color: orange;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .side-wrapper{
+                padding: 3em 1em;
+                #heading{
+                    font-size: 1.6em;
+                    font-weight: 500;
+                }
+                ol{
+
+                    padding: 2em 3em;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    li{
+                        margin-bottom: .7em;
+                        .fa-check{color: lightgreen;}
+                        .fa-times{color: #dc2430;}
+                    }
+                }
             }
         }
         button{background: #f2f2f2;}
-    }
-    .color-container{
-        padding: 1em;
-        margin-top: 1.5em;
-        background-color: #fdfdfd;
-        height: 30em;
-        h3{
-            font-size: 2em;
-            width: 3.1em;
-            border-bottom: 3px solid #47ebbf;
-            font-weight: 500;
+        .output-wrapper{
+            width: auto;
+            padding: 0 5em;
+            height: 30em;
+            .output-content{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                border-radius: .5em;
+                box-shadow: 0px 0px 10px 2px rgba(0,0,0,.2);
+                .output-header{
+                    display: flex;
+                    background-color: #333;
+                    padding: 1em;
+                    border-top-left-radius: .5em;
+                    border-top-right-radius: .5em;
+                }
+                .img{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('../images/gradient-op.png');
+                    background-size: cover;
+                    background-position: center;
+                    border-bottom-left-radius: .5em;
+                    border-bottom-right-radius: .5em;
+                }
+            }
         }
-        .img-container{
-            display: flex;
-            justify-content: center;
-            img{
-                width: 50em;
-                height: 25em;
+        &:nth-child(3){
+            .row-card{
+                .side-wrapper{order: 0;}
+                .ss-wrapper{order: 10;}
+            }
+        }
+    }
+    .show-container{
+        width: auto;
+        height: 25em;
+        padding:  1em 4em;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: 5em;
+        img{
+            width: 23em;
+            height: 23em;
+        }
+        .show-contents{
+            width: auto;
+            h3{
+                text-align: center;
+                font-size: 1.7em;
+            }
+            .gradient-wrapper{
+                height: 100%;
+                padding: 1em;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                & > div{
+                    width: 4em;
+                    height: 95%;
+                    border-radius: .5em;
+                }
+                #grad1{background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);}
+                #grad2{background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);}
+                #grad3{background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);}
+                #grad4{background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);}
+                #grad5{background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);}
+                #grad6{background-image: linear-gradient(120deg, #004ff9 0%, #fff94c 100%);}
             }
         }
     }
 }
 footer{
     text-align: center;
-    padding: 1em;
+    padding:  0em 1em;
     margin-top: 1.5em;
     h3{
         color: #fff;
