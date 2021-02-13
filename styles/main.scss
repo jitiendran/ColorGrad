@@ -14,6 +14,7 @@ body{
 }
 
 // global declarations
+
 .red-dot,.green-dot,.yellow-dot{
     border-radius: 50%;
     margin-right: .5em;
@@ -23,6 +24,12 @@ body{
 .red-dot{background: #dc2430;}
 .green-dot{background-color: rgb(96, 255, 96);}
 .yellow-dot{background-color: #f7ff00;}
+
+::selection{
+    background: #47ebbf;
+}
+
+//local declarations
 
 nav{
     display: flex;
@@ -262,24 +269,79 @@ main{
         }
         &:nth-child(3){
             .row-card{
-                .side-wrapper{order: 0;}
-                .ss-wrapper{order: 10;}
+                .side-wrapper{
+                    order: 0;
+                    blockquote{
+                        padding: 1em 3em;
+                        height: 100%;
+                        border-radius: .5em;
+                        display: flex;
+                        box-shadow: 0px 0px 7px .5px rgba(0,0,0,.2);
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        background: -webkit-linear-gradient(right,#ffe227 50%,#a685e2 50%);
+                        .ss-header{
+                            width: 100%;
+                            border-top-left-radius: .5em;
+                            border-top-right-radius: .5em;
+                            background-color: #333;
+                            padding: 1em;
+                            display: flex;
+                        }
+                        q{
+                            border-bottom-left-radius: .5em;
+                            border-bottom-right-radius: .5em;
+                            padding: 1em;
+                            background: #fff;
+                            font-size: 1.4em;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .ss-wrapper{
+                    order: 10;
+                    .ss-content{
+                        background: #fff;
+                        .color-div{
+                            padding: .3em;
+                            height: 2.5em;
+                            border-radius: .3em;
+                            margin-bottom: .3em;
+                            &:nth-child(1){background: #a685e2;}
+                            &:nth-child(2){background: #ffe227;}
+                            &:nth-child(4){background: #7fffd4;}
+                            &:nth-child(5){background: #adff2f;}
+                            &:nth-child(3){background: #ff577f;}  
+                        }
+                    }
+                }
+            }
+            .output-wrapper{
+                .output-content{
+                    .img{
+                        background-image: url('../images/color-op.png');
+                    }
+                }
             }
         }
     }
     .show-container{
         width: auto;
         height: 25em;
-        padding:  1em 4em;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+        padding:  1em 2em;
+        display: flex;
         margin-bottom: 5em;
-        img{
-            width: 23em;
-            height: 23em;
+        .img-contents{
+            width: calc(100% - 60%);
+            background-image: url("../images/designer 1.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left top;
         }
         .show-contents{
-            width: auto;
+            width: calc(100% - 40%);
             h3{
                 text-align: center;
                 font-size: 1.7em;
@@ -293,7 +355,7 @@ main{
                 justify-content: space-around;
                 & > div{
                     width: 4em;
-                    height: 95%;
+                    height: 93%;
                     border-radius: .5em;
                 }
                 #grad1{background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);}
@@ -302,6 +364,10 @@ main{
                 #grad4{background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);}
                 #grad5{background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);}
                 #grad6{background-image: linear-gradient(120deg, #004ff9 0%, #fff94c 100%);}
+                #grad7{background-image: linear-gradient(120deg, #70e1f5 0%, #ffd194 100%);}
+                #grad8{background-image: linear-gradient(120deg, #feac5e 0%, #c779d0 50%, #4bc0c8 100%);}
+                #grad9{background-image: linear-gradient(120deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);}
+
             }
         }
     }

@@ -33,6 +33,14 @@ body {
   background-color: #f7ff00;
 }
 
+::-moz-selection {
+  background: #47ebbf;
+}
+
+::selection {
+  background: #47ebbf;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,30 +401,110 @@ main .gradient-container:nth-child(3) .row-card .side-wrapper {
           order: 0;
 }
 
+main .gradient-container:nth-child(3) .row-card .side-wrapper blockquote {
+  padding: 1em 3em;
+  height: 100%;
+  border-radius: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.2);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-linear-gradient(right, #ffe227 50%, #a685e2 50%);
+}
+
+main .gradient-container:nth-child(3) .row-card .side-wrapper blockquote .ss-header {
+  width: 100%;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+  background-color: #333;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .gradient-container:nth-child(3) .row-card .side-wrapper blockquote q {
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+  padding: 1em;
+  background: #fff;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
 main .gradient-container:nth-child(3) .row-card .ss-wrapper {
   -webkit-box-ordinal-group: 11;
       -ms-flex-order: 10;
           order: 10;
 }
 
+main .gradient-container:nth-child(3) .row-card .ss-wrapper .ss-content {
+  background: #fff;
+}
+
+main .gradient-container:nth-child(3) .row-card .ss-wrapper .ss-content .color-div {
+  padding: .3em;
+  height: 2.5em;
+  border-radius: .3em;
+  margin-bottom: .3em;
+}
+
+main .gradient-container:nth-child(3) .row-card .ss-wrapper .ss-content .color-div:nth-child(1) {
+  background: #a685e2;
+}
+
+main .gradient-container:nth-child(3) .row-card .ss-wrapper .ss-content .color-div:nth-child(2) {
+  background: #ffe227;
+}
+
+main .gradient-container:nth-child(3) .row-card .ss-wrapper .ss-content .color-div:nth-child(4) {
+  background: #7fffd4;
+}
+
+main .gradient-container:nth-child(3) .row-card .ss-wrapper .ss-content .color-div:nth-child(5) {
+  background: #adff2f;
+}
+
+main .gradient-container:nth-child(3) .row-card .ss-wrapper .ss-content .color-div:nth-child(3) {
+  background: #ff577f;
+}
+
+main .gradient-container:nth-child(3) .output-wrapper .output-content .img {
+  background-image: url("../images/color-op.png");
+}
+
 main .show-container {
   width: auto;
   height: 25em;
-  padding: 1em 4em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  padding: 1em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 5em;
 }
 
-main .show-container img {
-  width: 23em;
-  height: 23em;
+main .show-container .img-contents {
+  width: calc(100% - 60%);
+  background-image: url("../images/designer 1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 main .show-container .show-contents {
-  width: auto;
+  width: calc(100% - 40%);
 }
 
 main .show-container .show-contents h3 {
@@ -443,7 +531,7 @@ main .show-container .show-contents .gradient-wrapper {
 
 main .show-container .show-contents .gradient-wrapper > div {
   width: 4em;
-  height: 95%;
+  height: 93%;
   border-radius: .5em;
 }
 
@@ -471,6 +559,18 @@ main .show-container .show-contents .gradient-wrapper #grad5 {
 
 main .show-container .show-contents .gradient-wrapper #grad6 {
   background-image: linear-gradient(120deg, #004ff9 0%, #fff94c 100%);
+}
+
+main .show-container .show-contents .gradient-wrapper #grad7 {
+  background-image: linear-gradient(120deg, #70e1f5 0%, #ffd194 100%);
+}
+
+main .show-container .show-contents .gradient-wrapper #grad8 {
+  background-image: linear-gradient(120deg, #feac5e 0%, #c779d0 50%, #4bc0c8 100%);
+}
+
+main .show-container .show-contents .gradient-wrapper #grad9 {
+  background-image: linear-gradient(120deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
 }
 
 footer {
