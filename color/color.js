@@ -80,3 +80,10 @@ const search = ()=>{
         fetched()
     }
 }
+//search also on pressing enter key
+document.getElementById('search-item').addEventListener("keyup",(event)=>{
+    if(event.keyCode == 13){
+        event.preventDefault();
+        search();
+    }
+})
