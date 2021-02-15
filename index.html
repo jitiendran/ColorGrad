@@ -7,6 +7,7 @@
     <link rel="icon" href="./images/color-picker.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <nav>
@@ -38,7 +39,7 @@
                 <button onclick="goGradient()">Check it out</button>
             </div>
             <div class="row-card">
-                <div class="ss-wrapper">
+                <div class="ss-wrapper" data-aos="fade-right">
                     <div class="ss-container">
                         <div class="ss-header">
                             <div class="red-dot"></div>
@@ -66,7 +67,11 @@
                     </ol>
                 </div>
             </div>            
-            <div class="output-wrapper">
+            <div class="output-wrapper" 
+            data-aos="zoom-in-up" 
+            data-aos-duration="500"
+            data-aos-easing="ease-out"
+            data-aos-offset="250">
                 <div class="output-content">
                     <div class="output-header">
                         <div class="red-dot"></div>
@@ -104,7 +109,7 @@
                 <button onclick="goColor()">Check it out</button>
             </div>
             <div class="row-card">
-                <div class="ss-wrapper">
+                <div class="ss-wrapper" data-aos="fade-left">
                     <div class="ss-container">
                         <div class="ss-header">
                             <div class="red-dot"></div>
@@ -120,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="side-wrapper">
+                <div class="side-wrapper" data-aos="fade-right">
                     <blockquote>
                         <div class="ss-header">
                             <div class="red-dot"></div>
@@ -134,7 +139,7 @@
                     </blockquote>
                 </div>
             </div>
-            <div class="output-wrapper">
+            <div class="output-wrapper" data-aos="flip-down">
                 <div class="output-content">
                     <div class="output-header">
                         <div class="red-dot"></div>
@@ -155,6 +160,15 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 380,
+          duration: 1000,
+          delay: 0,
+          easing: 'ease-out',
+      });
+    </script>
     <script src="./js/main.js"></script>
 </body>
 </html>

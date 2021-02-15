@@ -12,5 +12,3 @@ const goColor = ()=>{
 const goGradient = ()=>{
     window.location.href = "./gradient/gradient.html"
 }
-
-//Animation on scroll
