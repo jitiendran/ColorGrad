@@ -32,6 +32,7 @@ nav .web-title {
       -ms-flex-align: center;
           align-items: center;
   width: 18%;
+  cursor: pointer;
 }
 
 nav .web-title h3 {

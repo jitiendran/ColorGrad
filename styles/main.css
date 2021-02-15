@@ -62,6 +62,7 @@ nav .web-title {
       -ms-flex-align: center;
           align-items: center;
   width: 18%;
+  cursor: pointer;
 }
 
 nav .web-title h3 {
@@ -187,6 +188,13 @@ header .btns-container #color {
   border: 2px solid white;
   color: #fff;
   background: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .btns-container #color:hover {
+  background: #fff;
+  color: #000;
 }
 
 header .btns-container #gradient {
@@ -194,6 +202,15 @@ header .btns-container #gradient {
   background: #fff;
   -webkit-box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .btns-container #gradient:hover {
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.012);
+          transform: scale(1.012);
 }
 
 .row {

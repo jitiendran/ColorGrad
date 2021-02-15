@@ -1,5 +1,11 @@
 // Variable declaration
 const div = document.getElementById('wrapper')
+const web_title = document.querySelector(".web-title");
+
+//navigating for home
+web_title.addEventListener('click',()=>{
+    window.location.href = "../index.html"
+})
 
 //copy-to-clipboard
 const copy = (id,hex)=>{
