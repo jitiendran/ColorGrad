@@ -1,4 +1,7 @@
+// Variable declaration
 const div = document.getElementById('wrapper')
+
+//copy-to-clipboard
 const copy = (id,hex)=>{
     const copytext = document.getElementById(id).textContent
     navigator.clipboard.writeText(copytext).then(()=>{
@@ -13,26 +16,33 @@ const copy = (id,hex)=>{
         }, 3000);
     })
 }
+
+//Fetching from json
 const fetched = ()=>{
     fetch("./color.json")
     .then((resp)=>{return resp.json()})
     .then((data)=>{
         for(let i = 0 ; i < data.color.length ; i++){
+            //Object Destructuring
+            const {id,hex} = data.color[i]
+            //adding color div to dom
             div.innerHTML += 
             `<div class="color-container">
-                <div class="color" style="background-color: ${data.color[i].hex}"></div>
+                <div class="color" style="background-color: ${hex}"></div>
                 <div class="copy-wrapper" id="copy">
-                    <h3 id="${data.color[i].id}">${data.color[i].hex}</h3>
-                    <div id="${"s"+data.color[i].id}" style="display:none"><p>Copied!</p></div>
-                    <button onclick="copy('${data.color[i].id}','${data.color[i].hex}')"><i class="far fa-copy"></i></button>
+                    <h3 id="${id}">${hex}</h3>
+                    <div id="${"s"+id}" style="display:none"><p>Copied!</p></div>
+                    <button onclick="copy('${id}','${hex}')"><i class="far fa-copy"></i></button>
                 </div>
             </div>`
         }
     })
 }
 
-// Fetching on loading
+// Calling fetched() on loading
 fetched()
+
+//Searching for colors
 const search = ()=>{
     div.innerHTML = ''
     let count = 0
