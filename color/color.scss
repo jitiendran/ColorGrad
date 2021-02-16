@@ -8,8 +8,10 @@ $bg-color:#fdfdfd;
 body{
     font-family: 'Montserrat',sans-serif;
     background: $bg-color;
+    width: auto;
 }
 nav{
+    z-index: 1;
     display: flex;
     top: 0;
     position: fixed;
@@ -54,39 +56,63 @@ nav{
     }
 }
 main{
-    .search-wrapper{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .row{
+        width: 100%;
         margin-top: 5em;
-        padding: 2em 3.2em;
-        margin-bottom: -10em;
-        h3{
-            font-size: 2em;
-            width: 3.2em;
-            border-bottom: 3px solid #47ebbf;
-            font-weight: 500;
-        }
-        .input-content{
-            display: flex;
-            input{
-                font-size: 1.2em;
-                padding: .3em;
-                border-top-left-radius: .2em;
-                border-bottom-left-radius: .2em;
-                border: 2px solid #ccc;
-                outline: none;
+        .glider-contain{
+            width: 89vw;
+            margin-left: 5em;
+            z-index: 0;
+            .glider{
+                display: flex;
+                align-items: center;
+                padding: 2em;
+                .post-container{
+                    padding: .5em;
+                    background: #7fffd4;
+                    border-radius: .5em;
+                    text-align: center;
+                    h3{
+                        color: #fff;
+                    }
+                }
             }
-            button{
-                font-size: 1.2em;
-                padding: .39em .4em;
-                border-top-right-radius: .2em;
-                border-bottom-right-radius: .2em;
-                border: none;
-                cursor: pointer;
-                color: #fff;
-                background: rgb(128, 128, 128);
-                outline: none;
+
+        }
+        .search-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2em;
+            padding: 2em 3.2em;
+            margin-bottom: -10em;
+            h3{
+                font-size: 2em;
+                width: 3.2em;
+                border-bottom: 3px solid #47ebbf;
+                font-weight: 500;
+            }
+            .input-content{
+                display: flex;
+                input{
+                    font-size: 1.2em;
+                    padding: .3em;
+                    border-top-left-radius: .2em;
+                    border-bottom-left-radius: .2em;
+                    border: 2px solid #ccc;
+                    outline: none;
+                }
+                button{
+                    font-size: 1.2em;
+                    padding: .39em .4em;
+                    border-top-right-radius: .2em;
+                    border-bottom-right-radius: .2em;
+                    border: none;
+                    cursor: pointer;
+                    color: #fff;
+                    background: rgb(128, 128, 128);
+                    outline: none;
+                }
             }
         }
     }

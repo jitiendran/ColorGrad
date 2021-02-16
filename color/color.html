@@ -6,6 +6,7 @@
     <title>ColorGrad | Colors</title>
     <link rel="icon" href="../images/color-picker.png" type="image/x-icon">
     <link rel="stylesheet" href="./color.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
@@ -24,7 +25,12 @@
     </nav>
     <main>
         <div class="row">
-            <h3>Colors</h3>
+            <div class="glider-contain">
+                <div class="glider">
+                </div>
+                <button aria-label="Previous" class="glider-prev">«</button>
+                <button aria-label="Next" class="glider-next">»</button>
+            </div>
             <div class="search-wrapper">
                 <h3>Colors</h3>
                 <div class="input-content">
@@ -45,6 +51,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="./color.js"></script>
 </body>
 </html>

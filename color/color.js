@@ -1,6 +1,59 @@
 // Variable declaration
 const div = document.getElementById('wrapper')
-const web_title = document.querySelector(".web-title");
+const web_title = document.querySelector('.web-title');
+const Gliders = document.querySelector('.glider')
+const postColor = [
+    {
+        id:  "s1",
+        color: "white",
+        text: "All"
+    },
+    {
+        id:  "s2",
+        color: "red",
+        text: "Red",
+    },
+    {
+        id:  "s3",
+        color: "blue",
+        text: "Blue"
+    },
+    {
+        id:  "s4",
+        color: "green",
+        text: "Green"
+    },
+    {
+        id: "s5",
+        color: "violet",
+        text: "Violet"
+    },
+    {
+        id: "s6",
+        color: "gold",
+        text: "Gold"
+    },
+    {
+        id:  "s7",
+        color: "orange",
+        text: "Orange"
+    },
+    {
+        id:  "s8",
+        color: "yellow",
+        text: "Yellow"
+    },
+    {
+        id: "s9",
+        color: "brown",
+        text: "Brown"
+    },
+    {
+        id: "s10",
+        color: "black",
+        text: "Black"
+    }
+]
 
 //navigating for home
 web_title.addEventListener('click',()=>{
@@ -87,3 +140,79 @@ document.getElementById('search-item').addEventListener("keyup",(event)=>{
         search();
     }
 })
+
+//postcolor bar
+for(let i = 0 ; i < postColor.length ; i++){
+    const{id,color,text} = postColor[i]
+    const div  = document.createElement('div')
+    div.className = "searched-list"
+    div.id = id
+    div.style.width = "100%"
+    div.style.display = "flex"
+    div.style.alignItems = "center"
+    div.style.justifyContent = "space-evenly"
+    div.style.background = color
+    div.style.color = "white"
+    div.style.padding = '.5em'
+    div.style.borderRadius = ".5em"
+    div.style.marginRight = "1em"
+    div.style.fontSize = "1.2em"
+    div.style.fontWeight = "500"
+    div.style.cursor = "pointer"
+    if(text === "All"){
+        div.style.color = "black"
+        div.style.border = "2px solid gainsboro"
+    }
+    div.textContent = text
+    Gliders.append(div)
+}
+
+//SearchPost() for postColors
+ //For all colors search
+ document.getElementById('s1').addEventListener('click',()=>{
+     //reseting the page and displaying
+     div.innerHTML = ''
+     fetched()
+ })
+ //Other colors
+ for(let i = 2 ; i <= postColor.length ; i++){
+     const id = "s"+i
+     let count = 0
+     const element = document.getElementById(id) 
+     element.addEventListener('click',()=>{
+         div.innerHTML = ''
+         fetch('./color.json')
+         .then((res) => {return res.json()})
+         .then((data)=>{
+             for(let i = 0 ; i < data.color.length; i++){
+                 if(data.color[i].type == String(element.textContent).toLowerCase()){
+                     div.innerHTML += 
+                     `<div class="color-container">
+                         <div class="color" style="background-color: ${data.color[i].hex}"></div>
+                         <div class="copy-wrapper" id="copy">
+                             <h3 id="${data.color[i].id}">${data.color[i].hex}</h3>
+                             <div id="${"s"+data.color[i].id}" style="display:none"><p>Copied!</p></div>
+                             <button onclick="copy('${data.color[i].id}','${data.color[i].hex}')"><i class="far fa-copy"></i></button>
+                         </div>
+                     </div>`
+                     count += 1
+                 }
+             }
+             if(count == 0){
+                 div.innerHTML = `<h3><i class="fas fa-dizzy" style="font-size:1.3em"></i> No results found</h3>`
+             }
+         })
+     })
+ }
+ 
+//Glider.js library for carousel
+new Glider(Gliders, {
+    slidesToShow: 6,
+    slidesToScroll: 3,
+    draggable: true,
+    dots: '.dots',
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    }
+});

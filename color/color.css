@@ -9,9 +9,11 @@
 body {
   font-family: 'Montserrat',sans-serif;
   background: #fdfdfd;
+  width: auto;
 }
 
 nav {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,35 +79,67 @@ nav .nav-container a:hover {
           text-decoration: underline 3px solid #47ebbf;
 }
 
-main .search-wrapper {
+main .row {
+  width: 100%;
+  margin-top: 5em;
+}
+
+main .row .glider-contain {
+  width: 89vw;
+  margin-left: 5em;
+  z-index: 0;
+}
+
+main .row .glider-contain .glider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5em;
+  padding: 2em;
+}
+
+main .row .glider-contain .glider .post-container {
+  padding: .5em;
+  background: #7fffd4;
+  border-radius: .5em;
+  text-align: center;
+}
+
+main .row .glider-contain .glider .post-container h3 {
+  color: #fff;
+}
+
+main .row .search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2em;
   padding: 2em 3.2em;
   margin-bottom: -10em;
 }
 
-main .search-wrapper h3 {
+main .row .search-wrapper h3 {
   font-size: 2em;
   width: 3.2em;
   border-bottom: 3px solid #47ebbf;
   font-weight: 500;
 }
 
-main .search-wrapper .input-content {
+main .row .search-wrapper .input-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .search-wrapper .input-content input {
+main .row .search-wrapper .input-content input {
   font-size: 1.2em;
   padding: .3em;
   border-top-left-radius: .2em;
@@ -114,7 +148,7 @@ main .search-wrapper .input-content input {
   outline: none;
 }
 
-main .search-wrapper .input-content button {
+main .row .search-wrapper .input-content button {
   font-size: 1.2em;
   padding: .39em .4em;
   border-top-right-radius: .2em;
