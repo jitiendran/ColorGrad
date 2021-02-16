@@ -25,31 +25,36 @@ const postColor = [
     },
     {
         id: "s5",
+        color: "#ff5e78",
+        text: "Pink"
+    },
+    {
+        id: "s6",
         color: "violet",
         text: "Violet"
     },
     {
-        id: "s6",
+        id: "s7",
         color: "gold",
         text: "Gold"
     },
     {
-        id:  "s7",
+        id:  "s8",
         color: "orange",
         text: "Orange"
     },
     {
-        id:  "s8",
+        id:  "s9",
         color: "yellow",
         text: "Yellow"
     },
     {
-        id: "s9",
+        id: "s10",
         color: "brown",
         text: "Brown"
     },
     {
-        id: "s10",
+        id: "s11",
         color: "black",
         text: "Black"
     }

@@ -249,6 +249,106 @@
             "id": "c50",
             "type": "blue",
             "hex": "#98acf8"
+        },
+        {
+            "id": "c51",
+            "type": "green",
+            "hex": "#65d6ce"
+        },
+        {
+            "id": "c52",
+            "type": "brown",
+            "hex": "#433d3c"
+        },
+        {
+            "id": "c53",
+            "type": "broen",
+            "hex": "#a07676"
+        },
+        {
+            "id": "c54",
+            "type": "blue",
+            "hex": "#153e90"
+        },
+        {
+            "id": "c55",
+            "type": "green",
+            "hex": "#54e346"
+        },
+        {
+            "id": "c56",
+            "type": "yellow",
+            "hex": "#fffaa4"
+        },
+        {
+            "id": "c57",
+            "type": "green",
+            "hex": "#c6fced"
+        },
+        {
+            "id": "c58",
+            "type": "green",
+            "hex": "#8ad7c1"
+        },
+        {
+            "id": "c59",
+            "type": "red",
+            "hex": "#d35d6e"
+        },
+        {
+            "id": "c60",
+            "type": "green",
+            "hex": "#5aa469"
+        },
+        {
+            "id": "c61",
+            "type": "red",
+            "hex": "#e40017"
+        },
+        {
+            "id": "c62",
+            "type": "red",
+            "hex": "#af0069"
+        },
+        {
+            "id": "c63",
+            "type": "orange",
+            "hex": "#ef4f4f"
+        },
+        {
+            "id": "c64",
+            "type": "blue",
+            "hex": "#111d5e"
+        },
+        {
+            "id": "c65",
+            "type": "pink",
+            "hex": "#fd3a69"
+        },
+        {
+            "id": "c66",
+            "type": "blue",
+            "hex": "#848ccf"
+        },
+        {
+            "id": "c67",
+            "type": "blue",
+            "hex": "#93b5e1"
+        },
+        {
+            "id": "c68",
+            "type": "gold",
+            "hex": "#ffdbc5"
+        },
+        {
+            "id": "c69",
+            "type": "green",
+            "hex": "#8fcfd1"
+        },
+        {
+            "id": "c70",
+            "type": "green",
+            "hex": "#14b1ab"
         }
     ]
 }
