@@ -50,16 +50,26 @@ const postColor = [
     },
     {
         id: "s10",
+        color: "white",
+        text: "White"
+    },
+    {
+        id: "s11",
+        color: "grey",
+        text: "Grey"
+
+    },
+    {
+        id: "s12",
         color: "brown",
         text: "Brown"
     },
     {
-        id: "s11",
+        id: "s13",
         color: "black",
         text: "Black"
     }
 ]
-
 //navigating for home
 web_title.addEventListener('click',()=>{
     window.location.href = "../index.html"
@@ -164,7 +174,8 @@ for(let i = 0 ; i < postColor.length ; i++){
     div.style.fontSize = "1.2em"
     div.style.fontWeight = "500"
     div.style.cursor = "pointer"
-    if(text === "All"){
+    //special cases for background
+    if(text === "All" || color === "white"){
         div.style.color = "black"
         div.style.border = "2px solid gainsboro"
     }
@@ -173,42 +184,43 @@ for(let i = 0 ; i < postColor.length ; i++){
 }
 
 //SearchPost() for postColors
+
  //For all colors search
- document.getElementById('s1').addEventListener('click',()=>{
+document.getElementById('s1').addEventListener('click',()=>{
      //reseting the page and displaying
-     div.innerHTML = ''
-     fetched()
- })
+    div.innerHTML = ''
+    fetched()
+})
  //Other colors
- for(let i = 2 ; i <= postColor.length ; i++){
-     const id = "s"+i
-     let count = 0
-     const element = document.getElementById(id) 
-     element.addEventListener('click',()=>{
-         div.innerHTML = ''
-         fetch('./color.json')
-         .then((res) => {return res.json()})
-         .then((data)=>{
-             for(let i = 0 ; i < data.color.length; i++){
-                 if(data.color[i].type == String(element.textContent).toLowerCase()){
-                     div.innerHTML += 
-                     `<div class="color-container">
-                         <div class="color" style="background-color: ${data.color[i].hex}"></div>
-                         <div class="copy-wrapper" id="copy">
-                             <h3 id="${data.color[i].id}">${data.color[i].hex}</h3>
-                             <div id="${"s"+data.color[i].id}" style="display:none"><p>Copied!</p></div>
-                             <button onclick="copy('${data.color[i].id}','${data.color[i].hex}')"><i class="far fa-copy"></i></button>
-                         </div>
-                     </div>`
-                     count += 1
-                 }
-             }
-             if(count == 0){
-                 div.innerHTML = `<h3><i class="fas fa-dizzy" style="font-size:1.3em"></i> No results found</h3>`
-             }
-         })
-     })
- }
+for(let i = 2 ; i <= postColor.length ; i++){
+    const id = "s"+i
+    let count = 0
+    const element = document.getElementById(id) 
+    element.addEventListener('click',()=>{
+        div.innerHTML = ''
+        fetch('./color.json')
+        .then((res) => {return res.json()})
+        .then((data)=>{
+            for(let i = 0 ; i < data.color.length; i++){
+                if(data.color[i].type == String(element.textContent).toLowerCase()){
+                    div.innerHTML += 
+                    `<div class="color-container">
+                        <div class="color" style="background-color: ${data.color[i].hex}"></div>
+                        <div class="copy-wrapper" id="copy">
+                            <h3 id="${data.color[i].id}">${data.color[i].hex}</h3>
+                            <div id="${"s"+data.color[i].id}" style="display:none"><p>Copied!</p></div>
+                            <button onclick="copy('${data.color[i].id}','${data.color[i].hex}')"><i class="far fa-copy"></i></button>
+                        </div>
+                    </div>`
+                    count += 1
+                }
+            }
+            if(count == 0){
+                div.innerHTML = `<h3><i class="fas fa-dizzy" style="font-size:1.3em"></i> No results found</h3>`
+            }
+        })
+    })
+}
  
 //Glider.js library for carousel
 new Glider(Gliders, {

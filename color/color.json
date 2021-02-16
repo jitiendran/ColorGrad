@@ -349,6 +349,156 @@
             "id": "c70",
             "type": "green",
             "hex": "#14b1ab"
+        },
+        {
+            "id": "c71",
+            "type": "pink",
+            "hex": "#ff75a0"
+        },
+        {
+            "id": "c72",
+            "type": "green",
+            "hex": "#95e1d3"
+        },
+        {
+            "id": "c73",
+            "type": "green",
+            "hex": "#94ebcd"
+        },
+        {
+            "id": "c74",
+            "type": "green",
+            "hex": "#6ddccf"
+        },
+        {
+            "id": "c75",
+            "type": "grey",
+            "hex": "#9fb8ad"
+        },
+        {
+            "id": "c76",
+            "type": "orange",
+            "hex": "#fb743e"
+        },
+        {
+            "id": "c77",
+            "type": "blue",
+            "hex": "#a1cae2"
+        },
+        {
+            "id": "c78",
+            "type": "pink",
+            "hex": "#fbaccc"
+        },
+        {
+            "id": "c79",
+            "type": "pink",
+            "hex": "#f875aa"
+        },
+        {
+            "id": "c80",
+            "type": "black",
+            "hex": "#314e52"
+        },
+        {
+            "id": "c81",
+            "type": "black",
+            "hex": "#1e212d"
+        },
+        {
+            "id": "c82",
+            "type": "gold",
+            "hex": "#eae3c8"
+        },
+        {
+            "id": "c83",
+            "type": "brown",
+            "hex": "#b68973"
+        },
+        {
+            "id": "c84",
+            "type": "pink",
+            "hex": "#ffe8e8"
+        },
+        {
+            "id": "c85",
+            "type": "pink",
+            "hex": "#ffdcdc"
+        },
+        {
+            "id": "c86",
+            "type": "red",
+            "hex": "#ffb4b4"
+        },
+        {
+            "id": "c87",
+            "type": "red",
+            "hex": "#ff9292"
+        },
+        {
+            "id": "c88",
+            "type": "green",
+            "hex": "#c7ffd8"
+        },
+        {
+            "id": "c89",
+            "type": "green",
+            "hex": "#98ded9"
+        },
+        {
+            "id": "c90",
+            "type": "brown",
+            "hex": "#b67171"
+        },
+        {
+            "id": "c91",
+            "type": "pink",
+            "hex": "#fcd1d1"
+        },
+        {
+            "id": "c92",
+            "type": "white",
+            "hex": "#ece2e1"
+        },
+        {
+            "id": "c93",
+            "type": "blue",
+            "hex": "#aee1e1"
+        },
+        {
+            "id": "c94",
+            "type": "blue",
+            "hex": "#d3e0dc"
+        },
+        {
+            "id": "c95",
+            "type": "pink",
+            "hex": "#ee99a0"
+        },
+        {
+            "id": "c96",
+            "type": "green",
+            "hex": "#a3ddcb"
+        },
+        {
+            "id": "c97",
+            "type": "green",
+            "hex": "#bbdfc8"
+        },
+        {
+            "id": "c98",
+            "type": "green",
+            "hex": "#5eaaa8"
+        },
+        {
+            "id": "c99",
+            "type": "white",
+            "hex": "#ffe3de"
+        },
+        {
+            "id": "c100",
+            "type": "brown",
+            "hex": "#493323"
         }
     ]
 }
