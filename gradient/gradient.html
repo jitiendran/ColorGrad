@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="../images/color-picker.png" type="image/x-icon">
     <link rel="stylesheet" href="./gradient.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>ColorGrad | Gradients</title>
 </head>
@@ -23,7 +24,19 @@
         </div>
     </nav>
     <main>
-        <p><i class="fas fa-dizzy"></i> Sorry this page is under construction.</p>
+        <div class="row">
+            <div class="search-wrapper">
+                <h3>Gradients</h3>
+                <div class="input-content">
+                    <input id="search-item" type="text" placeholder="color...">
+                    <button id="search-btn" onclick="search()"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="gradient-wrapper">
+        </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="./gradient.js"></script>
 </body>
 </html>
