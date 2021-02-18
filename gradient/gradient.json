@@ -1,109 +1,179 @@
 {
-    "gradient": [
-        {
-            "Id": 1,
-            "Color1": "#004ff9",
-            "Color2": "#fff94c",
-            "Type": "blue",
-            "Direction": "120deg"
-        },
-        {
-            "Id": 2,
-            "Color1": "#a6c0fe",
-            "Color2": "#f68084",
-            "Type": "pink",
-            "Direction": "120deg"
-        },
-        {
-            "Id": 3,
-            "Color1": "#2af598",
-            "Color2": "#009efd",
-            "Type": "green",
-            "Direction": "180deg"
-        },
-        {
-            "Id": 4,
-            "Color1": "#d4fc79",
-            "Color2": "#96e6a1",
-            "Type": "yellow",
-            "Direction": "to right"
-        },
-        {
-            "Id": 5,
-            "Color1": "#4facfe",
-            "Color2": "#00f2fe",
-            "Type": "blue",
-            "Direction": "180deg"
-        },
-        {
-            "Id": 6,
-            "Color1": "#ffd194",
-            "Color2": "#70e1f5",
-            "Type": "orange",
-            "Direction": "120deg"
-        },
-        {
-            "Id": 7,
-            "Color1": " #feac5e",
-            "Color2": "#c779d0",
-            "Type": "orange",
-            "Direction": "120deg"
-        },
-        {
-            "Id": 8,
-            "Color1": "#7b4397",
-            "Color2": "#dc2430",
-            "Type": "violet",
-            "Direction": "120deg"
-        },
-        {
-            "Id": 9,
-            "Color1": "#00bf8f",
-            "Color2": "#001510",
-            "Type": "green",
-            "Direction": "to right"
-        },
-        {
-            "Id": 10,
-            "Color1": "#ff0084",
-            "Color2": "#33001b",
-            "Type": "pink",
-            "Direction": "to right"
-        },
-        {
-            "Id": 11,
-            "Color1": "#fdfc47",
-            "Color2": "#24fe41",
-            "Type": "yellow",
-            "Direction": "to right"
-        },
-        {
-            "Id": 12,
-            "Color1": "#00c6ff",
-            "Color2": "#0072ff",
-            "Type": "blue",
-            "Direction": "to right"
-        },
-        {
-            "Id": 13,
-            "Color1": "#9d50bb",
-            "Color2": "#6e48aa",
-            "Type": "violet",
-            "Direction": "to right"
-        },
-        {
-            "Id": 14,
-            "Color1": "#b3ffab",
-            "Color2": "#12fff7",
-            "Type": "green",
-            "Direction": "to right"
-        },
-        {
-            "Id": 15,
-            "Color1": "#f0c27b",
-            "Color2": "#4b1248",
-            "Type": "orange",
-            "Direction": "to right"
-        }
-    ]
+  "gradient": [
+    {
+      "Id": 1,
+      "Color1": "#004ff9",
+      "Color2": "#fff94c",
+      "Type": "blue",
+      "Direction": "120deg"
+    },
+    {
+      "Id": 2,
+      "Color1": "#a6c0fe",
+      "Color2": "#f68084",
+      "Type": "pink",
+      "Direction": "120deg"
+    },
+    {
+      "Id": 3,
+      "Color1": "#2af598",
+      "Color2": "#009efd",
+      "Type": "green",
+      "Direction": "180deg"
+    },
+    {
+      "Id": 4,
+      "Color1": "#d4fc79",
+      "Color2": "#96e6a1",
+      "Type": "yellow",
+      "Direction": "to right"
+    },
+    {
+      "Id": 5,
+      "Color1": "#4facfe",
+      "Color2": "#00f2fe",
+      "Type": "blue",
+      "Direction": "180deg"
+    },
+    {
+      "Id": 6,
+      "Color1": "#ffd194",
+      "Color2": "#70e1f5",
+      "Type": "orange",
+      "Direction": "120deg"
+    },
+    {
+      "Id": 7,
+      "Color1": " #feac5e",
+      "Color2": "#c779d0",
+      "Type": "orange",
+      "Direction": "120deg"
+    },
+    {
+      "Id": 8,
+      "Color1": "#7b4397",
+      "Color2": "#dc2430",
+      "Type": "violet",
+      "Direction": "120deg"
+    },
+    {
+      "Id": 9,
+      "Color1": "#00bf8f",
+      "Color2": "#001510",
+      "Type": "green",
+      "Direction": "to right"
+    },
+    {
+      "Id": 10,
+      "Color1": "#ff0084",
+      "Color2": "#33001b",
+      "Type": "pink",
+      "Direction": "to right"
+    },
+    {
+      "Id": 11,
+      "Color1": "#fdfc47",
+      "Color2": "#24fe41",
+      "Type": "yellow",
+      "Direction": "to right"
+    },
+    {
+      "Id": 12,
+      "Color1": "#00c6ff",
+      "Color2": "#0072ff",
+      "Type": "blue",
+      "Direction": "to right"
+    },
+    {
+      "Id": 13,
+      "Color1": "#9d50bb",
+      "Color2": "#6e48aa",
+      "Type": "violet",
+      "Direction": "to right"
+    },
+    {
+      "Id": 14,
+      "Color1": "#b3ffab",
+      "Color2": "#12fff7",
+      "Type": "green",
+      "Direction": "to right"
+    },
+    {
+      "Id": 15,
+      "Color1": "#f0c27b",
+      "Color2": "#4b1248",
+      "Type": "orange",
+      "Direction": "to right"
+    },
+    {
+      "Id": 16,
+      "Color1": "#c471f5",
+      "Color2": "#fa71cd",
+      "Type": "violet",
+      "Direction": "to right"
+    },
+    {
+      "Id": 17,
+      "Color1": "#48c6ef",
+      "Color2": "#6f86d6",
+      "Type": "blue",
+      "Direction": "to right"
+    },
+    {
+      "Id": 18,
+      "Color1": "#f6d365",
+      "Color2": "#fda085",
+      "Type": "yellow",
+      "Direction": "to right"
+    },
+    {
+      "Id": 19,
+      "Color1": "#fbc2eb",
+      "Color2": "#a6c1ee",
+      "Type": "blue",
+      "Direction": "to right"
+    },
+    {
+      "Id": 20,
+      "Color1": "#fdcbf1",
+      "Color2": "#e6dee9",
+      "Type": "pink",
+      "Direction": "to right"
+    },
+    {
+      "Id": 21,
+      "Color1": "#e0c3fc",
+      "Color2": "#8ec5fc",
+      "Type": "blue",
+      "Direction": "to right"
+    },
+    {
+      "Id": 22,
+      "Color1": "#f093fb",
+      "Color2": "#f5576c",
+      "Type": "red",
+      "Direction": "to right"
+    },
+    {
+      "Id": 23,
+      "Color1": "#43e97b",
+      "Color2": "#38f9d7",
+      "Type": "green",
+      "Direction": "to right"
+    },
+    {
+      "Id": 24,
+      "Color1": "#cd9cf2",
+      "Color2": "#f6f3ff",
+      "Type": "violet",
+      "Direction": "to right"
+    },
+    {
+      "Id": 25,
+      "Color1": "#007adf",
+      "Color2": "#00ecbc",
+      "Type": "blue",
+      "Direction": "to right"
+    }
+  ]
 }
