@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: #fdfdfd;
   width: auto;
 }
@@ -23,7 +23,7 @@ nav {
           box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.2);
   width: 100%;
   background: #fff;
-  padding: .8em;
+  padding: 0.8em;
 }
 
 nav .web-title {
@@ -38,7 +38,7 @@ nav .web-title {
 }
 
 nav .web-title h3 {
-  margin-left: .3em;
+  margin-left: 0.3em;
   font-size: 1.4em;
 }
 
@@ -101,9 +101,9 @@ main .row .glider-contain .glider {
 }
 
 main .row .glider-contain .glider .post-container {
-  padding: .5em;
+  padding: 0.5em;
   background: #7fffd4;
-  border-radius: .5em;
+  border-radius: 0.5em;
   text-align: center;
 }
 
@@ -142,18 +142,18 @@ main .row .search-wrapper .input-content {
 
 main .row .search-wrapper .input-content input {
   font-size: 1.2em;
-  padding: .3em;
-  border-top-left-radius: .2em;
-  border-bottom-left-radius: .2em;
+  padding: 0.3em;
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
   border: 2px solid #ccc;
   outline: none;
 }
 
 main .row .search-wrapper .input-content button {
   font-size: 1.2em;
-  padding: .39em .4em;
-  border-top-right-radius: .2em;
-  border-bottom-right-radius: .2em;
+  padding: 0.39em 0.4em;
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
   border: none;
   cursor: pointer;
   color: #fff;
@@ -181,7 +181,7 @@ main .color-wrapper .color-container {
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 10px 0.3px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 0.3px rgba(0, 0, 0, 0.2);
-  border-radius: .5em;
+  border-radius: 0.5em;
   width: 17%;
   height: 10em;
   display: -webkit-box;
@@ -216,8 +216,8 @@ main .color-wrapper .color-container .copy-wrapper .copyshow {
 }
 
 main .color-wrapper .color-container .color {
-  border-top-left-radius: .5em;
-  border-top-right-radius: .5em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
   height: 70%;
 }
 

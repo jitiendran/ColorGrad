@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 90vh;
   background: #fdfdfd;
 }
@@ -21,6 +21,7 @@ body {
 }
 
 nav {
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +31,7 @@ nav {
           box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.2);
   width: 100%;
   background: #fff;
-  padding: .8em;
+  padding: 0.8em;
 }
 
 nav .web-title {
@@ -44,7 +45,7 @@ nav .web-title {
 }
 
 nav .web-title h3 {
-  margin-left: .3em;
+  margin-left: 0.3em;
   font-size: 1.4em;
 }
 
@@ -87,7 +88,6 @@ nav .nav-container a:hover {
 
 main {
   margin-top: 4.3em;
-  height: 100%;
 }
 
 main .row {
@@ -111,9 +111,9 @@ main .row .glider-contain .glider {
 }
 
 main .row .glider-contain .glider .post-container {
-  padding: .5em;
+  padding: 0.5em;
   background: #7fffd4;
-  border-radius: .5em;
+  border-radius: 0.5em;
   text-align: center;
 }
 
@@ -152,18 +152,18 @@ main .row .search-wrapper .input-content {
 
 main .row .search-wrapper .input-content input {
   font-size: 1.2em;
-  padding: .3em;
-  border-top-left-radius: .2em;
-  border-bottom-left-radius: .2em;
+  padding: 0.3em;
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
   border: 2px solid #ccc;
   outline: none;
 }
 
 main .row .search-wrapper .input-content button {
   font-size: 1.2em;
-  padding: .39em .4em;
-  border-top-right-radius: .2em;
-  border-bottom-right-radius: .2em;
+  padding: 0.39em 0.4em;
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
   border: none;
   cursor: pointer;
   color: #fff;
@@ -191,7 +191,7 @@ main .gradient-wrapper .gradient-container {
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 10px 0.3px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 0.3px rgba(0, 0, 0, 0.2);
-  border-radius: .5em;
+  border-radius: 0.5em;
   width: 18%;
   height: 12em;
   display: -webkit-box;
@@ -205,9 +205,9 @@ main .gradient-wrapper .gradient-container {
 }
 
 main .gradient-wrapper .gradient-container .gradient-bg {
-  padding: .5em;
-  border-top-left-radius: .5em;
-  border-top-right-radius: .5em;
+  padding: 0.5em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
   height: calc(100% - 30%);
 }
 
@@ -219,16 +219,16 @@ main .gradient-wrapper .gradient-container .gradient-bg button {
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: .3em;
+  border-radius: 0.3em;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: .3em .5em;
+  padding: 0.3em 0.5em;
   float: right;
   outline: none;
   cursor: pointer;
 }
 
 main .gradient-wrapper .gradient-container .gradient-content {
-  padding: 0 .5em;
+  padding: 0 0.5em;
   height: calc(100% - 70%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,5 +256,26 @@ main .gradient-wrapper .gradient-container .gradient-content button {
   outline: none;
   cursor: pointer;
   font-size: 1.4em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+footer h3 {
+  font-size: 1.2em;
+}
+
+footer h3 span {
+  font-size: 1.2em;
+  background: #f7ff00;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#fa63c8), to(#f7ff00));
+  background: linear-gradient(to right, #fa63c8, #f7ff00);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 /*# sourceMappingURL=gradient.css.map */

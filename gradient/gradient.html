@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="../images/color-picker.png" type="image/x-icon">
-    <link rel="stylesheet" href="./gradient.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="../images/color-picker.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./gradient.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <title>ColorGrad | Gradients</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="web-title">
-            <img src="../images/color-picker.png" alt="">
-            <h3>Color<span>Grad</span></h3>
-        </div>
-        <div class="nav-container">
-            <a href="../index.html">Home</a>
-            <a href="#">Docs</a>
-            <a href="../color/color.html">Colors</a>
-            <a href="./gradient.html">Gradients</a>
-            <a href="#">Contribute</a>
-        </div>
+      <div class="web-title">
+        <img src="../images/color-picker.png" alt="" />
+        <h3>Color<span>Grad</span></h3>
+      </div>
+      <div class="nav-container">
+        <a href="../index.html">Home</a>
+        <a href="#">Docs</a>
+        <a href="../color/color.html">Colors</a>
+        <a href="./gradient.html">Gradients</a>
+        <a href="#">Contribute</a>
+      </div>
     </nav>
     <main>
-        <div class="row">
-            <div class="search-wrapper">
-                <h3>Gradients</h3>
-                <div class="input-content">
-                    <input id="search-item" type="text" placeholder="color...">
-                    <button id="search-btn" onclick="search()"><i class="fas fa-search"></i> Search</button>
-                </div>
-            </div>
+      <div class="row">
+        <div class="search-wrapper">
+          <h3>Gradients</h3>
+          <div class="input-content">
+            <input id="search-item" type="text" placeholder="color..." />
+            <button id="search-btn" onclick="search()">
+              <i class="fas fa-search"></i> Search
+            </button>
+          </div>
         </div>
-        <div class="gradient-wrapper">
-        </div>
+      </div>
+      <div class="gradient-wrapper"></div>
     </main>
+    <footer>
+      <div class="footer-contents">
+        <div class="copyright">
+          <h3>
+            Copyrights <i class="far fa-copyright"></i> 2021
+            <span>Color</span>Grad, All rights reserved.
+          </h3>
+        </div>
+        <div class="icons"></div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="./gradient.js"></script>
-</body>
+  </body>
 </html>
